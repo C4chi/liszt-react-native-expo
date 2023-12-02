@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet, ImageBackground, Text,style } from "react-native";
 
-const stylessteps = () => {
+const Stylessteps = () => {
   return (
     <View style={stepCounterStyles.container}>
 
@@ -58,5 +58,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default stylessteps;
+export default Stylessteps;
   

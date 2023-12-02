@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet, ImageBackground, Text } from "react-native";
 import { stylesIntro1Text } from "../components/homescreen/intro1.text";
-import Stylessteps from "../components/common/stepcounter";
+import Stylessteps from "../components/common/Stepcounter";
 
 const Intro1 = () => {
   return (

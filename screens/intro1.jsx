@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet, ImageBackground, Text } from "react-native";
 import { stylesIntro1Text } from "../components/homescreen/intro1.text";
-import stylessteps from "../components/common/stepcounter";;
+import Stylessteps from "../components/common/stepcounter";
 
 const Intro1 = () => {
   return (
@@ -26,7 +26,6 @@ const Intro1 = () => {
           </Text>
         </View>
 
-       
         <Image
           source={require("../assets/Ellipse 1.svg")} 
           style={styles.ellipse1}
@@ -39,11 +38,18 @@ const Intro1 = () => {
           source={require("../assets/Ellipse 3.svg")} 
           style={styles.ellipse3}
         />
-        <Image
+
+        {/* Colocar Stylessteps encima de la imagen */}
+        <View style={stylessteps.container}>
+          <Stylessteps />
+        </View>
+
+        {/* Añadir otras imágenes si es necesario */}
+        {/* <Image
           source={require("../assets/step1.png")} 
           style={stylessteps.step1}
         />  
-        {/*<Image
+        <Image
           source={require("../assets/step2.png")} 
           style={stylessteps.step2}
         />  
@@ -54,7 +60,7 @@ const Intro1 = () => {
         <Image
           source={require("../assets/steprec.png")} 
           style={stylessteps.steprec}
-        /> */}               
+        /> */}
       </ImageBackground>
     </View>
   );
@@ -67,7 +73,7 @@ const styles = StyleSheet.create({
     flexShrink: 0,
   },
   backgroundImage: {
-    flex: 1,
+    flex: 0,
     width: "100%",
     height: "100%",
   },

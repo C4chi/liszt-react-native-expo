@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Image, StyleSheet, ImageBackground, Text,style } from "react-native";
-import stylessteps from './stepcounter';
 
 const stylessteps = () => {
   return (

@@ -1,32 +1,28 @@
 import React from "react";
-import { View, Image, StyleSheet, ImageBackground, Text,style } from "react-native";
+import { View, Image, StyleSheet, ImageBackground, Text, style } from "react-native";
+
 
 const Stylessteps = () => {
   return (
-    <View style={stepCounterStyles.container}>
+    <View style={stepCounterStyles.steprec}>
+      <Image
+        source={require("../../assets/step1.png")}
+        style={stepCounterStyles.step1}
+      />
+      <Image
+        source={require("../../assets/step2.png")}
+        style={stepCounterStyles.step2}
+      />
+      <Image
+        source={require("../../assets/step3.png")}
+        style={stepCounterStyles.step3}
+      />
+    </View>
 
-    <Image
-      source={require("../../assets/step1.png")}
-      style={styles.step1}
-    />
-    <Image
-      source={require("../../assets/step2.png")}
-      style={styles.step2}
-    />
-    <Image
-      source={require("../../assets/step3.png")}
-      style={styles.step3}
-    />
-    <Image
-      source={require("../../assets/steprec.png")}
-      style={styles.steprec}
-    />
-  
-  </View>
+  );
+};
 
-);};
-
-const styles = StyleSheet.create({
+export const stepCounterStyles = StyleSheet.create({
   step1: {
     width: 30,
     height: 30,
@@ -54,9 +50,9 @@ const styles = StyleSheet.create({
     position: "absolute",
     borderRadius: 8500,
     bottom: 100,
-    right:395,
+    right: 395,
   },
 });
 
 export default Stylessteps;
-  
+

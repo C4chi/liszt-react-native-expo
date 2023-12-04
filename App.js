@@ -8,12 +8,14 @@ import Usercondition from "./screens/usercondition";
 export default () => {
   const [fontsLoaded] = useFonts({
     Roboto: require("./assets/fonts/Roboto-regular.ttf"),
+    Roboto: require("./assets/fonts/Roboto-black.ttf"),
+    Roboto: require("./assets/fonts/Roboto-bold.ttf"),
   });
   return (
     <View style={styles.container}>
-      {/*<HomeScreen />*/}
-      <IntroOne />
-      {/*<Usercondition />*/}
+      <HomeScreen />
+      <IntroOne /> 
+      <Usercondition /> 
     </View>
   );
 };

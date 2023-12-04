@@ -2,25 +2,27 @@ import React from "react";
 import { View, ImageBackground, StyleSheet } from "react-native";
 import ButtonUser from "../components/homescreen/Buttonuser.yes.no";
 import ButtonContinue from "../components/homescreen/Buttonuser.continue";
+import StylesConditionText from "../components/homescreen/usercondition.text";
 const Usercondition = () => {
   return (
     <ImageBackground
-      source={require("../assets/intro1.png")} 
+      source={require("../assets/intro1.png")}
       style={styles.background}
     >
       <View style={styles.container}>
+        {/* Componentes actuales */}
         <ButtonUser />
         <ButtonContinue />
-        {/* Otros componentes aquí */}
+        <StylesConditionText />
+
       </View>
     </ImageBackground>
   );
 };
-
 const styles = StyleSheet.create({
     container: {
-        width: 828,
-        height: 1792,
+        width: 430,
+        height: 932,
         flexShrink: 0,
       },
       backgroundImage: {

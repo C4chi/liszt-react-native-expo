@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet, ImageBackground, Text } from "react-native";
 import { stylesIntro1Text } from "../components/homescreen/intro1.text";
-import Stylessteps from "../components/common/Stepcounter";
+import Stylessteps from "../components/common/stepcounter"
 
 const IntroOne = () => {
   return (
@@ -13,8 +13,8 @@ const IntroOne = () => {
       >
         <View
           style={{
-            left: 650,
-            top: 1650,
+            left: 351.69,
+            top: 821,
             position: "absolute",
             transform: [{ rotate: "-90deg" }],
             transformOrigin: "0 0",
@@ -30,7 +30,7 @@ const IntroOne = () => {
         <Image source={require("../assets/Ellipse 2.svg")} style={styles.ellipse2} />
         <Image source={require("../assets/Ellipse 3.svg")} style={styles.ellipse3} />
 
-        <View style={styles.stepsContainer}>
+        <View >
           <Stylessteps />
         </View>
 
@@ -41,8 +41,8 @@ const IntroOne = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 828,
-    height: 1792,
+    width: 430,
+    height: 932,
     flexShrink: 0,
   },
   backgroundImage: {
@@ -51,32 +51,32 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   ellipse1: {
-    width: 300,
-    height: 300,
+    width: 150,
+    height: 150,
     borderRadius: 9999,
     position: "absolute",
-    top: 350,
-    left: 50,
+    top: 214,
+    left: 20,
   },
   ellipse2: {
-    width: 300,
-    height: 300,
+    width: 150,
+    height: 150,
     borderRadius: 9999,
     position: "absolute",
-    bottom: 760,
-    left: 50,
+    top: 390,
+    left: 20,
   },
   ellipse3: {
-    width: 300,
-    height: 300,
+    width: 150,
+    height: 150,
     borderRadius: 9999,
     position: "absolute",
-    bottom: 400,
-    left: 50,
+    top: 565,
+    left: 20,
   },
    stepsContainer: {
     position: 'absolute',
-    bottom: -120,
+    top: 863,
     alignSelf: 'center',
   },
 

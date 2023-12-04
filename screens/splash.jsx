@@ -40,8 +40,8 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 828,
-    height: 1792,
+    width: 430,
+    height: 932,
     flexShrink: 0,
   },
   backgroundImage: {

@@ -4,6 +4,7 @@ import HomeScreen from "./screens/splash";
 import IntroOne from './screens/intro1';
 import { useFonts } from "expo-font";
 import Usercondition from "./screens/usercondition";
+import RegisterOne from "./screens/register";
 
 export default () => {
   const [fontsLoaded] = useFonts({
@@ -13,9 +14,12 @@ export default () => {
   });
   return (
     <View style={styles.container}>
-      <HomeScreen />
-      <IntroOne />
-      <Usercondition /> 
+      {/*<HomeScreen />*/}
+      {/*<IntroOne />*/}
+      {/*<Usercondition />*/} 
+      <RegisterOne />
+      
+      
     </View>
   );
 };

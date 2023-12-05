@@ -7,7 +7,7 @@ const IntroOne = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require("../assets/intro1.png")}
+        source={require("../assets/introone.png")}
         style={styles.backgroundImage}
         resizeMode="cover"
       >

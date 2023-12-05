@@ -1,17 +1,16 @@
 import React from "react";
-import { View, Image, StyleSheet, ImageBackground, Text, style } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 
-
-const Stylessteps = () => {
+const Stylesstepstwo = () => {
   return (
     <View style={stepCounterStyles.container}>
       <Image
-        source={require("../../assets/steprec.png")}
-        style={stepCounterStyles.steprec}
-      />
-      <Image
         source={require("../../assets/step1.png")}
         style={stepCounterStyles.step1}
+      />
+      <Image
+        source={require("../../assets/steprec.png")}
+        style={stepCounterStyles.steprec}
       />
       <Image
         source={require("../../assets/step2.png")}
@@ -22,46 +21,47 @@ const Stylessteps = () => {
         style={stepCounterStyles.step3}
       />
     </View>
-
   );
 };
 
 export const stepCounterStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    margin: 6,
-    top: 863,
+    margin: 6, // Ajusta el margen según tus necesidades
+    bottom: 45,
     left: 166,
     right: 167,
-     
+    
   },
   step1: {
-    width: 12,
+    width: 11,
     height: 11,
-    borderRadius: 9999,
+    borderRadius:9999,
     marginLeft: 6,
+    marginRight: 6, 
+    
   },
   step2: {
-    width: 12,
+    width:11,
     height: 11,
-    borderRadius: 9999,
+    borderRadius:9999,
     marginLeft: 6,
     
   },
   step3: {
-    width: 12,
+    width: 11,
     height: 11,
-    borderRadius: 9999,
+    borderRadius:9999,
     marginLeft: 6,
     
   },
   steprec: {
     width: 45,
     height: 11,
-    borderRadius: 12,
-    marginLeft: 6,
+    borderRadius: 9999,
+    marginLeftleft: 6,
+    
   },
 });
 
-export default Stylessteps;
-
+export default Stylesstepstwo;

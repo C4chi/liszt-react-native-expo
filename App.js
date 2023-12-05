@@ -14,7 +14,7 @@ export default () => {
   return (
     <View style={styles.container}>
       <HomeScreen />
-      <IntroOne /> 
+      <IntroOne />
       <Usercondition /> 
     </View>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-export default function ButtonContinue() {
+export default function ButtonSingIn() {
   return (
     <View >
       <TouchableOpacity style={styles.buttonContinue}>
-        <Text style={styles.buttonTextContinue}>Continue</Text>
+        <Text style={styles.buttonTextContinue}>Sing In</Text>
       </TouchableOpacity>
     </View>
   );
@@ -17,17 +17,17 @@ const styles = StyleSheet.create({
     height: 56,
     width: 381,
     borderRadius: 28,
-    top: 762,
-    left: 25,
     alignContent: "center",
     justifyContent: "center",
-
+    top: 610,
+    
   },
   buttonTextContinue: {
     color: "black",
-    fontSize: 26,
-    fontWeight: "500",
-    lineHeight : 30.47,
+    fontFamily: "Roboto",
+    fontSize: 28.52,
+    fontWeight: "900",
+    lineHeight : 33.42,
     textAlign: "center",
   },
 });

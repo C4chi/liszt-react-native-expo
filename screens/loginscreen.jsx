@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { View, Image, StyleSheet, ImageBackground, TextInput, TouchableOpacity, Text } from "react-native";
-import RegisteroneText from '../components/Login/register/registerone.text';
 import { Feather } from "@expo/vector-icons";
-import ButtonSingUp from "../components/Login/register/Button.sing.up";
-import ButtonAllready from "../components/Login/register/Button.allready";
+import ButtonSingIn from "../components/Login/register/Button.sing.in"; 
 import ButtonConnect from "../components/Login/register/Button.connect.plataform";
 import Stylesstepsthree from "../components/common/stepcounterThree";
+import ButtonRememberForgot from './../components/Login/register/Button.remenber.forgot';
 
-const RegisterOne = () => {
+
+const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -18,18 +18,19 @@ const RegisterOne = () => {
 
   return (
     <ImageBackground
-      source={require("../assets/registercoverone.png")}
+      source={require("../assets/loginscreen.png")}
       style={styles.backgroundImage}
     >
       <Image source={require("../assets/registergreycover.png")} style={styles.covergrey} />
 
       <View style={styles.container}>
         {/* Componentes actuales */}
-        <RegisteroneText />
-        <ButtonAllready />
-        <ButtonSingUp />
+        <Text style={styles.Tittle}>Connect with Your favorite Artists</Text>
+        <Text style={styles.Singup}>Sign In</Text>
+        <ButtonSingIn />
         <Text style={stylesinput.Connect}>or connect with</Text>
         <ButtonConnect/>
+        
         
         
         
@@ -43,6 +44,7 @@ const RegisterOne = () => {
           value={email}
           onChangeText={(text) => setEmail(text)}
         />
+        
         </View>
         <Text style={stylesinput.title}>    Password*</Text>
         <View style={stylesinput.Container}>
@@ -58,6 +60,7 @@ const RegisterOne = () => {
             <Feather name={showPassword ? "eye-off" : "eye"} size={24} color="black" />
           </TouchableOpacity>
         </View>
+        
         <Stylesstepsthree/>
 
       </View>
@@ -85,6 +88,32 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 258,
     left: 0,
+  },
+  Tittle: {
+    color: '#FFFFFF',
+    fontSize: 28.52,
+    fontFamily: 'Roboto',
+    lineHeight: 33.42,
+    fontWeight: '900',
+    wordWrap: 'break-word',
+    width: 169,
+    height: 99,
+    top: 320,
+    left: 5,
+    textAlign: 'center',
+    
+  },
+  Singup: {
+    color: '#FFFFFF',
+    fontSize: 25.52,
+    lineHeight: 33.42,
+    fontFamily: 'Roboto',
+    fontWeight: '900',
+    wordWrap: 'break-word',
+    width: 270,
+    height: 33,
+    top: 390,
+    left: 95,
   },
 
 });
@@ -146,7 +175,7 @@ const stylesinput = StyleSheet.create({
   },
 });
 
-export default RegisterOne;
+export default LoginScreen;
 
 
 
